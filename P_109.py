@@ -6,7 +6,7 @@ import statistics
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
 
-df=pd.read_csv('py/StudentsPerformance.csv')
+df=pd.read_csv('StudentsPerformance.csv')
 data=df["reading score"].tolist()
 mean=statistics.mean(data)
 mode=statistics.mode(data)
